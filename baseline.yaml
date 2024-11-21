@@ -48,18 +48,18 @@ criteria:
       require multi-factor authentication for
       collaborators modifying the project
       repository settings or accessing sensitive
-      data.
+      data [or else](https://www.youtube.com/watch?v=7I-mdoClMVA)
     objective: |
       Protect against unauthorized access to
       sensitive areas of the project's repository,
       reducing the risk of account compromise or
-      insider threats.
+      [insider](https://github.com/funnelfiasco) threats.
     implementation: |
       Require multi-factor authentication for the
       project's version control system, requiring
       collaborators to provide a second form of
       authentication when accessing sensitive data
-      or modifying repository settings.
+      or modifying repository [settings](https://github.com/ossf/security-baseline/settings).
     control_mappings: # TODO
     security_insights_value: # TODO
     scorecard_probe:
