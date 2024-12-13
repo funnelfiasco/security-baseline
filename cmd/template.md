@@ -15,12 +15,16 @@ For more information on the project and to make contributions, visit the [GitHub
 
 ## Criteria Overview
 
-| ID  | Maturity Level | Category | Criteria |
-| --- | -------------- | -------- | -------- |
+<div class="texttable">
+  <div class="textrow">
+    <div class="header">ID</div><div class="header">Maturity Level</div><div class="header">Category</div><div class="header">Criteria</div>
+  </div>
 
 {{- range .Criteria }}
-| [{{ .ID }}]({{ .ID | asLink }}) | {{ .MaturityLevel }} | {{ .Category }} | {{ .CriteriaText | collapseNewlines | addLinks }} |
+<div class="textrow"><div> [{{ .ID }}]({{ .ID | asLink }}) </div><div> {{ .MaturityLevel }} </div><div> {{ .Category }} </div><div> {{ .CriteriaText | collapseNewlines | addLinks }} </div>
+</div>
 {{- end }}
+</div>
 
 ## Criteria Details
 
