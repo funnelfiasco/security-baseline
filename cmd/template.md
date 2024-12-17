@@ -15,6 +15,10 @@ For more information on the project and to make contributions, visit the [GitHub
 
 ## Criteria Overview
 
+* [Level 1](#level-1)
+* [Level 2](#level-2)
+* [Level 3](#level-3)
+
 ### Level 1
 
 {{- range .Criteria }}
