@@ -15,11 +15,11 @@ For more information on the project and to make contributions, visit the [GitHub
 
 ## Criteria Overview
 
-| ID  | Maturity Level | Category | Criteria |
-| --- | -------------- | -------- | -------- |
+### Level 1
 
 {{- range .Criteria }}
-| [{{ .ID }}]({{ .ID | asLink }}) | {{ .MaturityLevel }} | {{ .Category }} | {{ .CriteriaText | collapseNewlines | addLinks }} |
+{{if eq .MaturityLevel 1}}
+[{{ .ID }}]({{ .ID | asLink }}) — {{ .CriteriaText | addLinks }}
 {{- end }}
 
 ## Criteria Details
@@ -28,9 +28,16 @@ For more information on the project and to make contributions, visit the [GitHub
 
 ### {{ .ID }}
 
-**Criteria:**
+**Criterion:**
 
 {{ .CriteriaText | addLinks }}
+**Maturity Level:**
+
+{{ .MaturityLevel }}
+
+**Category:**
+
+{{ .Category }}
 **Objective:**
 
 {{ .Objective | addLinks}}
