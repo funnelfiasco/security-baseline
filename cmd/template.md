@@ -23,6 +23,22 @@ For more information on the project and to make contributions, visit the [GitHub
 {{ end }}
 {{- end }}
 
+### Level 2
+
+{{- range .Criteria }}
+{{if eq .MaturityLevel 2}}
+[{{ .ID }}]({{ .ID | asLink }}) — {{ .CriteriaText | addLinks }}
+{{ end }}
+{{- end }}
+
+### Level 3
+
+{{- range .Criteria }}
+{{if eq .MaturityLevel 3}}
+[{{ .ID }}]({{ .ID | asLink }}) — {{ .CriteriaText | addLinks }}
+{{ end }}
+{{- end }}
+
 ## Criteria Details
 
 {{- range .Criteria }}
@@ -33,12 +49,11 @@ For more information on the project and to make contributions, visit the [GitHub
 
 {{ .CriteriaText | addLinks }}
 **Maturity Level:**
-
 {{ .MaturityLevel }}
 
 **Category:**
-
 {{ .Category }}
+
 **Objective:**
 
 {{ .Objective | addLinks}}
