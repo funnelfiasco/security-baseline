@@ -148,9 +148,8 @@ Controls within this document may map to the following external frameworks:
 {{ range .References }}
   - {{.}}
 {{ end -}}
-
 {{ end -}}
-{{ end -}}
+{{ end }}
 
 ---
 
